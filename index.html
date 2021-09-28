@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="#" class="logo">Eid-al-Fitr</a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li><a href="#" class="active">HOME</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/stars2.png" id="stars2">
+        <img src="images/moon.png" id="moon">
+        <h2 id="text">Eid Mubarak</h2>
+        <img src="images/rock.png" id="rock">
+        <img src="images/masjid.png" id="musjid">
+        <img src="images/bottom.png" id="bottom">
+        <img src="images/lamp.png" id="lamp">
+    </section>
+    <div class="sec" id="content">
+        <h2>Happy Eid Mubarak You And Your Family</h2>
+        <h3>What is Eid-al-Fitr?</h3>
+        <p>
+            Eid-al-Fitr (also written and pronounced as Eid-ul-Fitr) is the first of two Eids of the Islamic (lunar) calendar year. 
+            It rounds off the month of Ramadan, which Muslims observe every year to acknowledge Allah’s revelation of the Quran to the Prophet Muhammad.
+        </p>
+        <br><br>
+        <p>
+            Eid al-Fitr, (Arabic: “Festival of Breaking Fast”) also spelled ʿĪd al-Fiṭr, also called al-ʿĪd al-Ṣaghīr, 
+            Turkish Ramazan Bayrami (“Ramadan Festival”), first of two canonical festivals of Islam. Eid al-Fitr marks 
+            the end of Ramadan, the Muslim holy month of fasting, and is celebrated during the first three days of Shawwal, 
+            the 10th month of the Islamic calendar (though the Muslim use of a lunar calendar means that it may fall in any season of the year). 
+            As in Islam’s other holy festival, Eid al-Adha, it is distinguished by the performance of communal prayer (ṣalāt) at daybreak on its first day. 
+            Eid al-Fitr is a time of official receptions and private visits, when friends greet one another, presents are given, 
+            new clothes are worn, and the graves of relatives are visited.
+        </p>
+        <br><br>
+        <h3>When is Eid-al-Fitr?</h3>
+        <p>
+            The exact date is never certain far in advance, as religious authorities in various countries rely on the 
+            sighting of the Eid crescent moon to announce when it will officially begin. It can be delayed by a day if the sky is too 
+            bright when the moon is out, or if clouds obstruct it. This is also the reason Ramadan can start on different days in different parts of the world.
+        </p>
+        <br><br>
+        <h3>Why is Eid-al-Fitr celebrated?</h3>
+        <p>
+            Eid-al-Fitr is regarded as a time to celebrate, with Muslims gathering their friends and family to show gratitude toward 
+            God following the previous month of reflection. The holiday serves as a great reminder for Muslims to be grateful for what they have, 
+            and to share with those who may be less fortunate.
+        </p>
+        <br><br>
+        <h3>How is Eid-al-Fitr celebrated?</h3>
+        <p>
+            As well as giving thanks, Muslims give an obligatory payment to charity (zakat al-Fitr), but this one is a smaller donation compared with the usual 
+            2.5-percent zakat that wealthy Muslims are taxed. This is another of the five pillars of Islam. In addition to these payments, some Muslims take the 
+            initiative to work voluntarily at soup kitchens and hand out their own food to those in need of relief.
+            <br><br>
+            As with Eid-al-Adha, gifting is a big part of Eid celebrations. Children receive eidia offerings in money bags, and sweet treats such as cookies 
+            and dates are exchanged among loved ones, neighbours, colleagues, friends and even strangers. Family members will also buy one another presents, 
+            although most of these are saved for the youngest members of each family.
+            <br><br>
+            Countries across the world hold huge events to celebrate Eid-al-Fitr. Days of fireworks shows are especially popular in the
+             United Arab Emirates and Saudi Arabia as people take the opportunity to spend quality time together.
+        </p>
+        <br><br>
+        <h3>What does the ‘Eid Mubarak’ greeting mean?</h3>
+        <p>
+            You’ll hear Muslims wishing each other ‘Eid Mubarak’, which refers to having a blessed day during Eid. It is said on both Eid 
+            days and is the expected greeting when meeting a fellow Muslim for the first time on Eid. Many non-Muslims who are familiar with 
+            the phrase and meaning of it also offer ‘Eid Mubarak’ as a greeting on this day when they see Muslim friends and colleagues.
+        </p>
+        <br><br>
+        <h3>Eid prayers</h3>
+        <p>
+            Muslims usually dress up to attend their local mosque, where as well as taking part in prayers, it’s a time for many people to have the first breakfast during 
+            sunlight hours they’ve had in a month. Before dawn, the Salaat ul-Fajr prayer takes place, and then it’s time to bathe before the Eid prayer, also known as Salaat al-Eid.
+            <br><br>
+            As Salaat al-Eid is performed only twice a year, the imam leading the congregation will usually explain how to perform this particular prayer before it begins.
+        </p>
+    </div>
+</body>
+
+<script>
+
+    let stars = document.getElementById('stars');
+    let stars2 = document.getElementById('stars2');
+    let moon = document.getElementById('moon');
+    let rock = document.getElementById('rock');
+    let musjid = document.getElementById('musjid');
+    let text = document.getElementById('text');
+    let header = document.getElementById('header');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.bottom = value * 0.05 + '%';
+        stars2.style.bottom = value * 0.025 + '%';
+        moon.style.bottom = value * -0.5 + 'px';
+        rock.style.bottom = value * -0.75 + 'px';
+        musjid.style.bottom = value * -0.15 + 'px';
+        
+        text.style.right = -100 + value * 0.5 + '%';
+        text.style.top = 50 + value * 0.1 + '%';
+
+        header.style.top = value * 0.5 + 'px';
+    })
+
+    const toggleMenu = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation')
+    toggleMenu.onclick = function(){
+        toggleMenu.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+
+</html>
